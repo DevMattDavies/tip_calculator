@@ -1,0 +1,10 @@
+:root {
+    --primary: hsl(172, 67%, 45%);
+    --darkestcyan: hsl(183, 100%, 15%);
+    --darkcyan: hsl(186, 14%, 43%);
+    --midcyan: hsl(184, 14%, 56%);
+    --lightcyan: hsl(185, 41%, 84%);
+    --lightestcyan: hsl(189, 41%, 97%);
+    font-size: 24px;
+    font-family: 'Press Start 2P', cursive;
+}
