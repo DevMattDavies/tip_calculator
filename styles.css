@@ -5,6 +5,7 @@
     --midcyan: hsl(184, 14%, 56%);
     --lightcyan: hsl(185, 41%, 84%);
     --lightestcyan: hsl(189, 41%, 97%);
+    --hover: hsl(172, 59%, 69%);
     font-size: 24px;
 }
 
@@ -75,9 +76,15 @@ h3 {
     padding: 1% 5%;
 }
 
-.input-box:focus {
+.input-box::placeholder {
+    color: var(--midcyan);
+}
+
+.input-box:focus,
+#custom-btn:focus {
     outline-color: var(--primary);
 }
+
 
 .flex-container {
     display: flex;
@@ -128,13 +135,18 @@ h3 {
 
 .tip-button:hover {
     color: var(--darkestcyan);
-    background-color: var(--primary);
+    background-color: var(--hover);
 }
 
 #custom-btn {
-    background-color: var(--lightcyan);
-    color: var(--darkcyan);
+    background-color: var(--lightestcyan);
+    color: var(--darkestcyan);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: right;
+    padding-right: 5%;
 }
+
 
 /* || People group */
 
@@ -164,13 +176,17 @@ h3 {
     border: none;
     border-radius: 5px;
     padding: 5%;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: var(--darkestcyan);
+}
+
+#reset-btn:hover {
+    background-color: var(--hover);
 }
 
 /* || Media queries for above mobile size */
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 500px) {
 
     .flex-container {
         flex-direction: row;
