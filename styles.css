@@ -6,5 +6,174 @@
     --lightcyan: hsl(185, 41%, 84%);
     --lightestcyan: hsl(189, 41%, 97%);
     font-size: 24px;
-    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    background-color: var(--lightcyan);
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+}
+
+main {
+    background-color: white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 7%;
+}
+
+header {
+    padding: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 0.7rem;
+    color: var(--midcyan);
+    margin-bottom: 0.4;
+}
+
+.flex-area-2 h2 {
+    color: var(--lightcyan);
+    margin-bottom: 0;
+}
+
+.money-half h2 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    position: absolute;
+    right: 0;
+    bottom: 20%;
+}
+
+.text-half h2 {
+    font-size: 0.7rem;
+    line-height: 0.1rem;
+}
+
+h3 {
+    font-size: 0.5rem;
+    color: var(--midcyan);
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-box {
+    background-color: var(--lightestcyan);
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 5px;
+    text-align: right;
+    color: var(--darkestcyan);
+    font-family: 'Space Mono', monospace;
+    font-size: 1rem;
+    padding: 1% 5%;
+}
+
+.input-box:focus {
+    outline-color: var(--primary);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* || Section title */
+
+
+/* || Bill subtotal section */
+
+#bill-subtotal,
+#tip,
+#people,
+#bill-total {
+    margin-bottom: 0.8rem;
+}
+
+#dollar-icon,
+#people-icon {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translate(-3%, -50%);
+}
+
+/* || Button group */
+
+.tip-button-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 0.7rem;
+
+}
+
+.tip-button {
+    padding: 5%;
+    border-radius: 5px;
+    border: none;
+    color: var(--lightestcyan);
+    background-color: var(--darkestcyan);
+    font-size: 1rem;
+    font-family: 'Space Mono', monospace;
+}
+
+.tip-button:hover {
+    color: var(--darkestcyan);
+    background-color: var(--primary);
+}
+
+#custom-btn {
+    background-color: var(--lightcyan);
+    color: var(--darkcyan);
+}
+
+/* || People group */
+
+
+/* || Bill total section */
+
+#bill-total {
+    background-color: var(--darkestcyan);
+    padding: 7%;
+    border-radius: 15px;
+}
+
+.tip-amount,
+.total-per-person {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 5% 0;
+}
+
+
+#reset-btn {
+    display: block;
+    width: 100%;
+    font-family: 'Space Mono', monospace;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 5px;
+    padding: 5%;
+    font-size: 1rem;
+    color: var(--darkestcyan);
+}
+
+/* || Media queries for above mobile size */
+
+@media only screen and (min-width: 400px) {
+
+    .flex-container {
+        flex-direction: row;
+    }
+
 }
