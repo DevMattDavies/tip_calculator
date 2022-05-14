@@ -88,6 +88,9 @@ h3 {
 .input-box:focus,
 #custom-btn:focus {
     outline-color: var(--primary);
+    -webkit-outline-color: var(--primary);
+    -moz-outline-color: var(--primary);
+
 }
 
 .input-box:hover,
