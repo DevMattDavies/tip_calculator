@@ -266,14 +266,18 @@ h3 {
     }
 
 
-    #people,
+
     #bill-total {
         margin-bottom: 0rem;
     }
 
+    #people {
+        margin-bottom: 3rem;
+    }
+
     #bill-subtotal,
     #tip {
-        margin-bottom: 2rem;
+        margin-bottom: 0rem;
     }
 
     .input-box {
@@ -304,7 +308,7 @@ h3 {
     }
 
     #reset-btn {
-        margin-top: 180px;
+        margin-top: 160px;
         padding: 3%;
     }
 
