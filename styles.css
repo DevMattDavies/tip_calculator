@@ -14,6 +14,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Space Mono', monospace;
+    height: 100vh;
 }
 
 main {
@@ -21,6 +22,7 @@ main {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     padding: 7%;
+
 }
 
 header {
@@ -143,13 +145,32 @@ h3 {
     color: var(--darkestcyan);
     box-sizing: border-box;
     width: 100%;
-    text-align: right;
+    text-align: center;
     padding-right: 5%;
 }
 
 
 /* || People group */
 
+/* || Toggle class for when bill or people is 0 */
+
+.subtitle-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.zero-error-box {
+    box-shadow: 0 0 2px orange;
+}
+
+.zero-error-bill-text,
+.zero-error-people-text {
+    color: orange;
+}
+
+.hidden {
+    display: none;
+}
 
 /* || Bill total section */
 
