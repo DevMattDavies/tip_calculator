@@ -6,7 +6,11 @@
     --lightcyan: hsl(185, 41%, 84%);
     --lightestcyan: hsl(189, 41%, 97%);
     --hover: hsl(172, 59%, 69%);
-    font-size: 24px;
+}
+
+html {
+    font-size: calc(60% + 0.8vmin);
+    height: 100vh;
 }
 
 body {
@@ -21,19 +25,18 @@ main {
     background-color: white;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    padding: 7%;
-
+    padding: 5% 7%;
 }
 
 header {
-    padding: 12%;
+    padding: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 h2 {
-    font-size: 0.7rem;
+    font-size: 1.3rem;
     color: var(--midcyan);
     margin-bottom: 0.4;
 }
@@ -44,7 +47,7 @@ h2 {
 }
 
 .money-half h2 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: var(--primary);
     position: absolute;
     right: 0;
@@ -52,12 +55,12 @@ h2 {
 }
 
 .text-half h2 {
-    font-size: 0.7rem;
+    font-size: 1.5rem;
     line-height: 0.1rem;
 }
 
 h3 {
-    font-size: 0.5rem;
+    font-size: 1rem;
     color: var(--midcyan);
 }
 
@@ -74,7 +77,7 @@ h3 {
     text-align: right;
     color: var(--darkestcyan);
     font-family: 'Space Mono', monospace;
-    font-size: 1rem;
+    font-size: 1.8rem;
     padding: 1% 5%;
 }
 
@@ -109,7 +112,7 @@ h3 {
 #tip,
 #people,
 #bill-total {
-    margin-bottom: 0.8rem;
+    margin-bottom: 2rem;
 }
 
 #dollar-icon,
@@ -126,7 +129,7 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
-    grid-gap: 0.7rem;
+    grid-gap: 1.2rem;
 
 }
 
@@ -136,11 +139,12 @@ h3 {
     border: none;
     color: var(--lightestcyan);
     background-color: var(--darkestcyan);
-    font-size: 1rem;
+    font-size: 1.8rem;
     font-family: 'Space Mono', monospace;
 }
 
-.tip-button:hover {
+.tip-button:hover,
+.tip-button:focus {
     color: var(--darkestcyan);
     background-color: var(--hover);
     cursor: pointer;
@@ -203,8 +207,9 @@ h3 {
     border: none;
     border-radius: 5px;
     padding: 5%;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     color: var(--darkestcyan);
+    margin-top: 10%;
 }
 
 #reset-btn:hover {
@@ -216,8 +221,88 @@ h3 {
 
 @media only screen and (min-width: 500px) {
 
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        max-width: 70%;
+        border-radius: 25px;
+        padding: 20px;
+    }
+
+    header {
+        height: 200px;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
     .flex-container {
         flex-direction: row;
+        width: 100%;
+        height: max-content;
+        padding: 0;
+        margin: 0;
+    }
+
+    .flex-area-1 {
+        height: max-content;
+        width: 100%;
+        margin-right: 3%;
+        padding: 10px;
+    }
+
+    .flex-area-2 {
+        height: max-content;
+        width: 100%;
+        margin-left: 3%;
+    }
+
+
+    #people,
+    #bill-total {
+        margin-bottom: 0rem;
+    }
+
+    #bill-subtotal,
+    #tip {
+        margin-bottom: 2rem;
+    }
+
+    .input-box {
+        font-size: 1.5rem;
+    }
+
+    .tip-button-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 0.7rem;
+    }
+
+    .tip-button {
+        font-size: 1.5rem;
+    }
+
+    .money-half h2 {
+        font-size: 2rem;
+    }
+
+    .text-half h2 {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 0.8rem;
+    }
+
+    #reset-btn {
+        margin-top: 180px;
+        padding: 3%;
     }
 
 }
